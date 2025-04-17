@@ -118,6 +118,11 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.active-link-nav-header {
+  position: relative;
+  color: #404bbf;
+}
+
 .address-header {
   font-style: normal;
   margin-left: auto;
@@ -155,9 +160,10 @@ img {
     ),
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   padding: 188px 0;
+  text-align: center;
 }
 
 .title-banner {
@@ -236,6 +242,9 @@ img {
   height: 112px;
   padding: 24px 0;
   margin: 0 auto 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .svg-about-company {
@@ -341,7 +350,7 @@ img {
 .social-link-team:focus,
 .social-link-footer:hover,
 .social-link-footer:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 .title-portfolio {
@@ -460,7 +469,7 @@ img {
   display: flex;
   flex-shrink: 0;
   align-self: flex-end;
-  gap: 24px;
+  gap: 16px;
 }
 
 .social-link-footer {
@@ -480,5 +489,9 @@ img {
 
 .footer-container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+
+.div-logo-footer {
+  margin-right: 120px;
 }
